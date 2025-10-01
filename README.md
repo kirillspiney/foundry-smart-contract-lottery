@@ -1,66 +1,43 @@
-## Foundry
+# 🎰 Foundry Smart Contract Lottery
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+A decentralized lottery smart contract built using **Foundry**, a fast and modular development framework for Ethereum smart contracts.
 
-Foundry consists of:
+## 📦 Project Structure
 
-- **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
-- **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
-- **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
-- **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+* `src/` – Solidity smart contract source code.
+* `test/` – Unit tests for the contracts.
+* `script/` – Deployment and interaction scripts.
+* `Makefile` – Task automation.
+* `foundry.toml` – Foundry project configuration.
+* `foundry.lock` – Locked dependencies.
 
-## Documentation
+## ⚙️ Installation
 
-https://book.getfoundry.sh/
+1. Clone the repository:
 
-## Usage
+   ```bash
+   git clone https://github.com/kirillspiney/foundry-smart-contract-lottery.git
+   cd foundry-smart-contract-lottery
+   ```
 
-### Build
+2. Install Foundry dependencies:
 
-```shell
-$ forge build
+   ```bash
+   forge install
+   ```
+
+## 🧪 Running Tests
+
+Run all tests using:
+
+```bash
+forge test
 ```
 
-### Test
+## 🚀 Deployment
 
-```shell
-$ forge test
-```
+1. Use the scripts in the `script/` folder to deploy the lottery contract to your chosen network.
 
-### Format
+## 📄 License
 
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+This project is licensed under the **MIT License**.
